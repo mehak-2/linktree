@@ -79,7 +79,8 @@ export default function App() {
         <header className="header">
           <img src={logoImg} alt="Logo" className="logo" />
           <h1 className="title">
-            Tokenizing the Future: Policy. Power. Real-World Assets.
+            Tokenizing the Future:
+            <br /> Policy. Power. Real-World Assets.
           </h1>
 
           <p className="event-time">LIVE at 3 Oct, 9:30PM (IST)</p>
