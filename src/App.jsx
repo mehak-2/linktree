@@ -1,27 +1,27 @@
 import React from "react";
-import avatarImg from "./assets/pitchmatterlogo.jpg";
+import logoImg from "./assets/pitchmatterlogo.jpg";
 
-const links = [
+const socialLinks = [
   {
-    title: "Watch us LIVE on Linkedin — follow for updates!",
+    name: "LinkedIn",
     url: "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fevents%2Ftokenizingthefuture-policy-powe7377661907102707712%2Ftheater%2F",
     icon: "linkedin",
     platform: "linkedin",
   },
   {
-    title: "Watch us LIVE on Youtube — follow for updates!",
+    name: "YouTube",
     url: "https://www.youtube.com/live/WsodsLpO8XM",
     icon: "youtube",
     platform: "youtube",
   },
   {
-    title: "Watch us LIVE on Twitter — follow for updates!",
+    name: "Twitter",
     url: "https://x.com/pitchxpo",
-    icon: "x",
-    platform: "x",
+    icon: "twitter",
+    platform: "twitter",
   },
   {
-    title: "Watch us LIVE on Telegram — follow for updates!",
+    name: "Telegram",
     url: "https://t.me/AngelSEEDcommunity",
     icon: "telegram",
     platform: "telegram",
@@ -59,7 +59,7 @@ function Icon({ name }) {
       </svg>
     );
   }
-  if (name === "x") {
+  if (name === "twitter") {
     return (
       <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
         <path
@@ -72,48 +72,40 @@ function Icon({ name }) {
   return null;
 }
 
-function Kebab() {
-  return (
-    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-      <circle cx="12" cy="5" r="2" fill="currentColor" />
-      <circle cx="12" cy="12" r="2" fill="currentColor" />
-      <circle cx="12" cy="19" r="2" fill="currentColor" />
-    </svg>
-  );
-}
-
 export default function App() {
   return (
-    <div className="page">
-      <div className="card glass">
-        <div className="card-actions"></div>
-        <img src={avatarImg} alt="Logo" className="avatar" />
-        <h1 className="title">PITCH_XPO_X_HUE_X_MAXTRON</h1>
-        <p className="subtitle">
-          Tokenizing the Future: Policy. Power. Real-World Assets.
-        </p>
-        <p className="live-info">LIVE AT 3 OCT, 9:30PM (IST)</p>
+    <main className="page">
+      <section className="card">
+        <header className="header">
+          <img src={logoImg} alt="Logo" className="logo" />
+          <h1 className="title">
+            Tokenizing the Future: Policy. Power. Real-World Assets.
+          </h1>
 
-        <div className="links">
-          {links.map((link, idx) => (
-            <a
-              key={idx}
-              href={link.url}
-              className={`glass link-row link-${link.platform}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="left">
+          <p className="event-time">LIVE at 3 Oct, 9:30PM (IST)</p>
+        </header>
+
+        <div className="social-section">
+          <h2 className="social-heading">
+            Watch us LIVE - Follow for more updates!
+          </h2>
+          <div className="social-buttons">
+            {socialLinks.map((link, idx) => (
+              <a
+                key={idx}
+                href={link.url}
+                className={`social-button social-button--${link.platform}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={`Watch on ${link.name}`}
+              >
                 <Icon name={link.icon} />
-              </span>
-              <span className="text">{link.title}</span>
-              <span className="right" aria-hidden="true">
-                ›
-              </span>
-            </a>
-          ))}
+                <span className="social-button__text">{link.name}</span>
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
