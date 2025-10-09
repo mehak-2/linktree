@@ -83,7 +83,9 @@ export default function App() {
             and Funding Boom
           </h1>
 
-          <p className="event-time">LIVE at 16 Oct, 10:00PM (IST)</p>
+          <p className="event-time">
+            LIVE at 16 Oct, 9:30 AM PDT | 8:30 PM GST | 10:00 PM IST
+          </p>
         </header>
 
         <div className="social-section">
