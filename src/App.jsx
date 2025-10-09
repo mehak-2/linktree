@@ -4,13 +4,13 @@ import logoImg from "./assets/pitchmatterlogo.jpg";
 const socialLinks = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fevents%2Ftokenizingthefuture-policy-powe7377661907102707712%2Ftheater%2F",
+    url: "https://www.linkedin.com/events/7381950984253628416/",
     icon: "linkedin",
     platform: "linkedin",
   },
   {
     name: "YouTube",
-    url: "https://www.youtube.com/live/WsodsLpO8XM",
+    url: "https://www.youtube.com/watch?v=BJgu9L2Le1s",
     icon: "youtube",
     platform: "youtube",
   },
@@ -79,11 +79,11 @@ export default function App() {
         <header className="header">
           <img src={logoImg} alt="Logo" className="logo" />
           <h1 className="title">
-            Tokenizing the Future:
-            <br /> Policy. Power. Real-World Assets.
+            Silicon Valley’s Innovation <br />
+            and Funding Boom
           </h1>
 
-          <p className="event-time">LIVE at 3 Oct, 9:30PM (IST)</p>
+          <p className="event-time">LIVE at 16 Oct, 10:00PM (IST)</p>
         </header>
 
         <div className="social-section">
