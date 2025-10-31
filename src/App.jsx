@@ -1,16 +1,17 @@
+
 import React from "react";
 import logoImg from "./assets/pitchmatterlogo.jpg";
 
 const socialLinks = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/events/7381950984253628416/",
+    url: "https://www.linkedin.com/events/web3-multiutilityecosystem-rwa7389941653865693184/theater/",
     icon: "linkedin",
     platform: "linkedin",
   },
   {
     name: "YouTube",
-    url: "https://www.youtube.com/watch?v=BJgu9L2Le1s",
+    url: "https://www.youtube.com/live/zIWmO-_pZE8?si=2WujwyYHreGhkUj_",
     icon: "youtube",
     platform: "youtube",
   },
@@ -19,12 +20,6 @@ const socialLinks = [
     url: "https://x.com/pitchxpo",
     icon: "twitter",
     platform: "twitter",
-  },
-  {
-    name: "Telegram",
-    url: "https://t.me/AngelSEEDcommunity",
-    icon: "telegram",
-    platform: "telegram",
   },
 ];
 
@@ -49,16 +44,16 @@ function Icon({ name }) {
       </svg>
     );
   }
-  if (name === "telegram") {
-    return (
-      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-        <path
-          fill="currentColor"
-          d="M9.03 15.52 8.9 19a1 1 0 0 0 1.6.8l2.2-1.7 3.7 2.7c.8.6 1.9.2 2.2-.7l3.42-12.1c.28-.98-.6-1.9-1.58-1.6L2.6 10.1c-1 .3-1 1.7 0 2l4.93 1.47 10.82-6.6-9.32 8.55Z"
-        />
-      </svg>
-    );
-  }
+  // if (name === "telegram") {
+  //   return (
+  //     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+  //       <path
+  //         fill="currentColor"
+  //         d="M9.03 15.52 8.9 19a1 1 0 0 0 1.6.8l2.2-1.7 3.7 2.7c.8.6 1.9.2 2.2-.7l3.42-12.1c.28-.98-.6-1.9-1.58-1.6L2.6 10.1c-1 .3-1 1.7 0 2l4.93 1.47 10.82-6.6-9.32 8.55Z"
+  //       />
+  //     </svg>
+  //   );
+  // }
   if (name === "twitter") {
     return (
       <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
@@ -79,12 +74,11 @@ export default function App() {
         <header className="header">
           <img src={logoImg} alt="Logo" className="logo" />
           <h1 className="title">
-            Silicon Valley’s Innovation <br />
-            and Funding Boom
+            WEB3: MULTI UTILITY ECOSYSTEM <br />& RWA
           </h1>
 
           <p className="event-time">
-            LIVE at 16 Oct, 9:30 AM PDT | 8:30 PM GST | 10:00 PM IST
+            LIVE at 7 Nov'25, 9:30 AM PDT | 8:30 PM GST | 10:00 PM IST
           </p>
         </header>
 
