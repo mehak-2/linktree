@@ -378,7 +378,7 @@ body {
   }
   
   .social-buttons {
-    grid-template-columns: repeat(4, 1fr); /* Four-column grid */
+    grid-template-columns: repeat(3, 1fr); /* Four-column grid */
     gap: 1.5rem;
   }
   
