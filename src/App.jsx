@@ -1,31 +1,31 @@
 import React from "react";
-import avatarImg from "./assets/pitchmatterlogo.jpg";
+import logoImg from "./assets/pitchmatterlogo.jpg";
 
-const links = [
+const socialLinks = [
   {
-    title: "Watch us LIVE on Linkedin — follow for updates!",
-    url: "https://www.linkedin.com/uas/login?session_redirect=https%3A%2F%2Fwww.linkedin.com%2Fevents%2Ftokenizingthefuture-policy-powe7377661907102707712%2Ftheater%2F",
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/events/web3-multiutilityecosystem-rwa7389941653865693184/theater/",
     icon: "linkedin",
     platform: "linkedin",
   },
   {
-    title: "Watch us LIVE on Youtube — follow for updates!",
-    url: "https://www.youtube.com/live/WsodsLpO8XM",
+    name: "YouTube",
+    url: "https://www.youtube.com/live/zIWmO-_pZE8?si=2WujwyYHreGhkUj_",
     icon: "youtube",
     platform: "youtube",
   },
   {
-    title: "Watch us LIVE on Twitter — follow for updates!",
+    name: "Twitter",
     url: "https://x.com/pitchxpo",
-    icon: "x",
-    platform: "x",
+    icon: "twitter",
+    platform: "twitter",
   },
-  {
-    title: "Watch us LIVE on Telegram — follow for updates!",
-    url: "https://t.me/AngelSEEDcommunity",
-    icon: "telegram",
-    platform: "telegram",
-  },
+  // {
+  //   name: "Telegram",
+  //   url: "https://t.me/AngelSEEDcommunity",
+  //   icon: "telegram",
+  //   platform: "telegram",
+  // },
 ];
 
 function Icon({ name }) {
@@ -49,17 +49,17 @@ function Icon({ name }) {
       </svg>
     );
   }
-  if (name === "telegram") {
-    return (
-      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
-        <path
-          fill="currentColor"
-          d="M9.03 15.52 8.9 19a1 1 0 0 0 1.6.8l2.2-1.7 3.7 2.7c.8.6 1.9.2 2.2-.7l3.42-12.1c.28-.98-.6-1.9-1.58-1.6L2.6 10.1c-1 .3-1 1.7 0 2l4.93 1.47 10.82-6.6-9.32 8.55Z"
-        />
-      </svg>
-    );
-  }
-  if (name === "x") {
+  // if (name === "telegram") {
+  //   return (
+  //     <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+  //       <path
+  //         fill="currentColor"
+  //         d="M9.03 15.52 8.9 19a1 1 0 0 0 1.6.8l2.2-1.7 3.7 2.7c.8.6 1.9.2 2.2-.7l3.42-12.1c.28-.98-.6-1.9-1.58-1.6L2.6 10.1c-1 .3-1 1.7 0 2l4.93 1.47 10.82-6.6-9.32 8.55Z"
+  //       />
+  //     </svg>
+  //   );
+  // }
+  if (name === "twitter") {
     return (
       <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
         <path
@@ -72,48 +72,42 @@ function Icon({ name }) {
   return null;
 }
 
-function Kebab() {
-  return (
-    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-      <circle cx="12" cy="5" r="2" fill="currentColor" />
-      <circle cx="12" cy="12" r="2" fill="currentColor" />
-      <circle cx="12" cy="19" r="2" fill="currentColor" />
-    </svg>
-  );
-}
-
 export default function App() {
   return (
-    <div className="page">
-      <div className="card glass">
-        <div className="card-actions"></div>
-        <img src={avatarImg} alt="Logo" className="avatar" />
-        <h1 className="title">PITCH_XPO_X_HUE_X_MAXTRON</h1>
-        <p className="subtitle">
-          Tokenizing the Future: Policy. Power. Real-World Assets.
-        </p>
-        <p className="live-info">LIVE AT 3 OCT, 9:30PM (IST)</p>
+    <main className="page">
+      <section className="card">
+        <header className="header">
+          <img src={logoImg} alt="Logo" className="logo" />
+          <h1 className="title">
+            WEB3: MULTI UTILITY ECOSYSTEM <br />& RWA
+          </h1>
 
-        <div className="links">
-          {links.map((link, idx) => (
-            <a
-              key={idx}
-              href={link.url}
-              className={`glass link-row link-${link.platform}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span className="left">
+          <p className="event-time">
+            LIVE at 7 Nov'25, 9:30 AM PDT | 8:30 PM GST | 10:00 PM IST
+          </p>
+        </header>
+
+        <div className="social-section">
+          <h2 className="social-heading">
+            Watch us LIVE - Follow for more updates!
+          </h2>
+          <div className="social-buttons">
+            {socialLinks.map((link, idx) => (
+              <a
+                key={idx}
+                href={link.url}
+                className={`social-button social-button--${link.platform}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                title={`Watch on ${link.name}`}
+              >
                 <Icon name={link.icon} />
-              </span>
-              <span className="text">{link.title}</span>
-              <span className="right" aria-hidden="true">
-                ›
-              </span>
-            </a>
-          ))}
+                <span className="social-button__text">{link.name}</span>
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
