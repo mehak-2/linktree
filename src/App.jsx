@@ -112,13 +112,13 @@ import logoImg from "./assets/pitchmatterlogo.jpg";
 const socialLinks = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/events/goldminetokenisation7395404202228973570/theater/",
+    url: "https://www.linkedin.com/posts/pitchxpo_web3gaming-esportsinnovation-tokenisation-activity-7399821644787040256-UMr_",
     icon: "linkedin",
     platform: "linkedin",
   },
   {
     name: "YouTube",
-    url: "https://www.youtube.com/live/aAyUwV8p6KU?si=QsnRfe_MZ6xz4WP_",
+    url: "https://www.youtube.com/live/fRTaEFepkkM?si=ngiOgYI6oyiDSUw0",
     icon: "youtube",
     platform: "youtube",
   },
@@ -180,13 +180,10 @@ export default function App() {
       <section className="card">
         <header className="header">
           <img src={logoImg} alt="Logo" className="logo" />
-          <h1 className="title">
-            Gold Mine Tokenisation Redefining Gold Investment for the Digital
-            Age
-          </h1>
+          <h1 className="title">Tokenisation in Gaming & Esports</h1>
 
           <p className="event-time">
-            LIVE at 20 Nov'25, 9:30 AM PDT | 8:30 PM GST | 10:00 PM IST
+            LIVE at 20 Nov'25, 8:30 AM PDT | 8:30 PM GST | 10:00 PM IST
           </p>
         </header>
 
