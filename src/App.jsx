@@ -112,13 +112,13 @@ import logoImg from "./assets/pitchmatterlogo.jpg";
 const socialLinks = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/posts/pitchxpo_web3gaming-esportsinnovation-tokenisation-activity-7399821644787040256-UMr_",
+    url: "https://www.linkedin.com/events/tokenizedregenerativeaiagricult7404820885632638978/theater/",
     icon: "linkedin",
     platform: "linkedin",
   },
   {
     name: "YouTube",
-    url: "https://www.youtube.com/live/fRTaEFepkkM?si=ngiOgYI6oyiDSUw0",
+    url: "https://www.youtube.com/live/XcxyBKQtlK8?si=eocIp1oSvKga6Rvl",
     icon: "youtube",
     platform: "youtube",
   },
@@ -180,10 +180,13 @@ export default function App() {
       <section className="card">
         <header className="header">
           <img src={logoImg} alt="Logo" className="logo" />
-          <h1 className="title">Tokenisation in Gaming & Esports</h1>
+          <h1 className="title">
+            TOKENIZATION OF REGENERATIVE A.I. AGRICULTURE AND WASTE TO ENERGY
+            HARVESTING
+          </h1>
 
           <p className="event-time">
-            LIVE at 20 Nov'25, 8:30 AM PDT | 8:30 PM GST | 10:00 PM IST
+            LIVE at 18 Dec'25, 8:30 AM PDT | 8:30 PM GST | 10:00 PM IST
           </p>
         </header>
 
