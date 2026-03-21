@@ -201,7 +201,7 @@ export default function App() {
           </h1>
 
           <p className="event-time">
-            LIVE at 27 March'26, 8:00 AM PDT | 8:00 PM GST | 9:00 PM IST
+            LIVE at 27 March'26, 9:00 PM IST
           </p>
         </header>
 
