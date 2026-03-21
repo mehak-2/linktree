@@ -249,6 +249,21 @@ body {
   color: #2aabee;
 }
 
+/* Facebook */
+.social-button--facebook {
+  border-color: rgba(66, 103, 178, 0.3);
+}
+
+.social-button--facebook:hover {
+  background: rgba(66, 103, 178, 0.15);
+  border-color: rgba(66, 103, 178, 0.5);
+  box-shadow: 0 10px 25px rgba(66, 103, 178, 0.2);
+}
+
+.social-button--facebook svg {
+  color: #4267b2;
+}
+
 /* ==========================================================================
    RESPONSIVE DESIGN - MOBILE FIRST
    ========================================================================== */
@@ -333,7 +348,7 @@ body {
   }
   
   .social-buttons {
-    grid-template-columns: 1fr 1fr; /* Two-column grid */
+    grid-template-columns: repeat(2, 1fr); /* Two-column grid for 4 buttons */
     gap: 1.25rem;
   }
   
@@ -378,8 +393,10 @@ body {
   }
   
   .social-buttons {
-    grid-template-columns: repeat(3, 1fr); /* Four-column grid */
+    grid-template-columns: repeat(2, 1fr); /* Two-column grid for better layout with 4 buttons */
     gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
   }
   
   .social-button {
@@ -440,8 +457,10 @@ body {
   }
   
   .social-buttons {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Two-column grid for better balance */
     gap: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
   }
   
   .social-button {
