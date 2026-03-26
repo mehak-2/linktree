@@ -195,7 +195,7 @@ export default function App() {
     <main className="page">
       <section className="card">
         <header className="header">
-          <img src={logoImg} alt="Logo" className="logo" />
+      
           <h1 className="title">
          AI Employees Are Replacing Work : Here’s How Businesses Are Saving Time and Scaling Faster
           </h1>
