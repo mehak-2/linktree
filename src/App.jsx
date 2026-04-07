@@ -112,13 +112,13 @@ import logoImg from "./assets/pitchmatterlogo.jpg";
 const socialLinks = [
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/events/7441118604944875520?viewAsMember=true",
+    url: "https://www.linkedin.com/events/the-30trillionopportunity7447196479607271424/theater/",
     icon: "linkedin",
     platform: "linkedin",
   },
   {
     name: "YouTube",
-    url: "https://www.youtube.com/live/3QATA8l3xKA?si=aAbiHP9xnzNQ_ku4",
+    url: "https://www.youtube.com/live/3AFZOe-pqj4?si=GCgRkZPLYkxxxcOi",
     icon: "youtube",
     platform: "youtube",
   },
@@ -130,7 +130,7 @@ const socialLinks = [
   },
   {
     name: "Facebook",
-    url: "https://www.facebook.com/share/1FpqERbwH7/",
+    url: "https://www.facebook.com/share/1aFvc9Cndd/",
     icon: "facebook",
     platform: "facebook",
   },
@@ -195,13 +195,13 @@ export default function App() {
     <main className="page">
       <section className="card">
         <header className="header">
-      
+          
           <h1 className="title">
-         AI Employees Are Replacing Work : Here’s How Businesses Are Saving Time and Scaling Faster
+         “The $30 Trillion Opportunity” and discover how asset tokenization is transforming global wealth.
           </h1>
 
           <p className="event-time">
-            LIVE at 27 March'26, 9:00 PM IST
+            LIVE at 11 April'26, 9:30 PM IST
           </p>
         </header>
 
